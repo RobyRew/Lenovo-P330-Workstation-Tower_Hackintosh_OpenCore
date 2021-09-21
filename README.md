@@ -1,18 +1,18 @@
-# Hackintosh Guide for **Lenovo P330 Workstation Tower ** aka **30C6S5GV00** model.
+# Hackintosh Guide for **Lenovo P330 Workstation Tower** aka **30C6S5GV00** model.
 
-**This guide it's updated to OpenCore 0.7.3 and not tested on my main device.**
+**This guide it's updated to OpenCore 0.7.3 and not tested on any device.**
 <!-- shields -->
 <div>
     <!-- downloads -->
-    <a href="https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/releases">
-        <img src="https://img.shields.io/github/downloads/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/total" alt="downloads"/>
+    <a href="https://github.com/RobyRew/Lenovo-P330-Workstation-Tower_Hackintosh_OpenCore/releases">
+        <img src="https://img.shields.io/github/downloads/RobyRew/Lenovo-P330-Workstation-Tower_Hackintosh_OpenCore/total" alt="downloads"/>
     </a>
     <!-- version -->
-    <a href="https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/releases/latest">
-        <img src="https://img.shields.io/github/release/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore.svg" alt="latest version"/>
+    <a href="https://github.com/RobyRew/Lenovo-P330-Workstation-Tower_Hackintosh_OpenCore/releases/latest">
+        <img src="https://img.shields.io/github/release/RobyRew/Lenovo-P330-Workstation-Tower_Hackintosh_OpenCore.svg" alt="latest version"/>
     </a>
     <!-- platform -->
-    <a href="https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore">
+    <a href="https://github.com/RobyRew/Lenovo-P330-Workstation-Tower_Hackintosh_OpenCore">
         <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg" alt="platform"/>
     </a>
 </div>
@@ -38,20 +38,18 @@
 | Monitor: |  Lenovo T24i-10  |
 
 ![Lenovo-P330-Workstation-Tower Layout](/Docs/Images/Guide/Lenovo-P330-Workstation-Tower-layout.png)
-These are all the external ports of the laptop. (**They all work**)
 
 ### Working
 - [x] **Tested with macOS Monterrey**
-- [] **Audio:** Realtek (Thanks to AppleALC.kext with layout-id=1 setted in Device Properties)
-- [] **USB:** All internal and external ports (Thanks to SSDT-EC-USBX.aml)
-- [] **Ethernet:** Intel I219-LM (Thanks to IntelMausi.kext)
-- [] **Shutdown:** Yes
-- [] **Restart:** Yes
-- [] **Sleep/Wake:** Yes
+- [x] **Audio:** Realtek (Thanks to AppleALC.kext with layout-id=1 setted in Device Properties)
+- [x] **USB:** All internal and external ports (Thanks to SSDT-EC-USBX.aml)
+- [x] **Ethernet:** Intel I219-LM (Thanks to IntelMausi.kext)
+- [x] **Shutdown:** Yes
+- [x] **Restart:** Yes
+- [x] **Sleep/Wake:** Yes
 
 ### Not working
 - dGPU (Any support in Mojave and up).
-- Continuity Features (not working for now, waiting on https://openintelwireless.github.io/).
 
 
 ```bash
@@ -96,17 +94,17 @@ These are all the external ports of the laptop. (**They all work**)
 
 ---
 
-# OpenCore Configuration
+# OpenCore Configuration - NOT DONE YET
 
-## [Here it's my config.plist and the explanation:](/Docs/config.plist.md)
-#### [ACPI](/Docs/config.plist.md#acpi)
-#### [Booter](/Docs/config.plist.md#booter)
-#### [DeviceProperties](/Docs/config.plist.md#deviceproperties)
-#### [Kernel](/Docs/config.plist.md#kernel)
-#### [Misc](/Docs/config.plist.md#misc)
-#### [NVRAM](/Docs/config.plist.md#nvram)
-#### [PlatformInfo](/Docs/config.plist.md#platforminfo)
-#### [UEFI](/Docs/config.plist.md#uefi)
+---## [Here it's my config.plist and the explanation:](/Docs/config.plist.md)
+---#### [ACPI](/Docs/config.plist.md#acpi)
+---#### [Booter](/Docs/config.plist.md#booter)
+---#### [DeviceProperties](/Docs/config.plist.md#deviceproperties)
+---#### [Kernel](/Docs/config.plist.md#kernel)
+---#### [Misc](/Docs/config.plist.md#misc)
+---#### [NVRAM](/Docs/config.plist.md#nvram)
+---#### [PlatformInfo](/Docs/config.plist.md#platforminfo)
+---#### [UEFI](/Docs/config.plist.md#uefi)
 
 ---
 
@@ -135,11 +133,7 @@ https://browser.geekbench.com/v5/cpu/5707123
 
 [OpenCore Team](https://github.com/acidanthera/OpenCorePkg) (Bootloader)
 
-[Dortania](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#starting-point) (Guide)
-
-[PoomSmart](https://github.com/PoomSmart/ASUS-FX504GE-Hackintosh) (Some ideas for my build)
-
-[MegaStood](https://github.com/MegaStood/Hackintosh-FX504GE-ES72) (Properties and boot argument for HDMI output)
+[Dortania](https://dortania.github.io/OpenCore-Install-Guide/config-desktop.plist/coffee-lake.html#starting-point) (Guide)
 
 ---
 
