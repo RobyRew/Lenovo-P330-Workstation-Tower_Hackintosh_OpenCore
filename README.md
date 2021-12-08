@@ -37,16 +37,8 @@
 | Ethernet: | Intel I219-LM |
 | Monitor: |  Lenovo T24i-10  |
 
-![Lenovo-P330-Workstation-Tower Layout](/Docs/Images/Guide/Lenovo-P330-Workstation-Tower-layout.png)
-
 ### Working
-- [x] **Tested with macOS Monterrey**
-- [x] **Audio:** Realtek (Thanks to AppleALC.kext with layout-id=1 setted in Device Properties)
-- [x] **USB:** All internal and external ports (Thanks to SSDT-EC-USBX.aml)
-- [x] **Ethernet:** Intel I219-LM (Thanks to IntelMausi.kext)
-- [x] **Shutdown:** Yes
-- [x] **Restart:** Yes
-- [x] **Sleep/Wake:** Yes
+- [x] 
 
 ### Not working
 - dGPU (Any support in Mojave and up).
@@ -92,40 +84,6 @@
 - Make Sure you have [Latest BIOS vM1VKT46A](Lenovo-P330-Workstation-Tower)
 - After Updating the BIOS, stock configuration works, so don't worry about this part.
 
----
-
-# OpenCore Configuration - NOT DONE YET
-
----## [Here it's my config.plist and the explanation:](/Docs/config.plist.md)
----#### [ACPI](/Docs/config.plist.md#acpi)
----#### [Booter](/Docs/config.plist.md#booter)
----#### [DeviceProperties](/Docs/config.plist.md#deviceproperties)
----#### [Kernel](/Docs/config.plist.md#kernel)
----#### [Misc](/Docs/config.plist.md#misc)
----#### [NVRAM](/Docs/config.plist.md#nvram)
----#### [PlatformInfo](/Docs/config.plist.md#platforminfo)
----#### [UEFI](/Docs/config.plist.md#uefi)
-
----
-
-# Post Install (Important!!)
-Open Terminal.app and run those commands:
-```bash
-sudo rm /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist
-sudo rm /Library/Preferences/SystemConfiguration/preferences.plist
-```
----
-
-# BenchMarks:
-#### Cinebench R23:
-![Cinebench R23](/Docs/Images/Benchmarks/Cinebench_R23.png)
-
-#### GeekBench 5:
-![GeekBench 5_CPU Score](/Docs/Images/Benchmarks/GeekBench5_CPU.png)
-![GeekBench 5_GPU Score](/Docs/Images/Benchmarks/GeekBench5_GPU.png)
-https://browser.geekbench.com/v5/cpu/5707123
-
----
 
 # Credits
 
